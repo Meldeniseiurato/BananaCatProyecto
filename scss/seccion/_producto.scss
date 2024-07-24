@@ -1,0 +1,84 @@
+@import '../general/color';
+@import '../general/extend';
+@import '../general/breakpoints';
+
+
+.autos-tittle {
+    font-weight: bold;
+    font-size: 20px;
+    color: $blanco;
+}
+
+.autos-secondary {
+    font-weight: 300;
+    color: $gris;
+    font-size: 16px;
+}
+
+.autos-price {
+    font-weight: 400;
+    color: $rojo;
+    font-size: 18px;
+}
+
+.imgProducto {
+    height: 330px;
+    width: 100%;
+}
+
+.cardProductosContainer {
+    @extend %flex-center-center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cardProducto {
+    height: 450px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px $gris solid;
+}
+
+.cardTexto {
+    @extend %flex-center-center;
+    margin: 0;
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+    .cardProductosContainer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cardProducto {
+        height: 400px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imgProducto {
+        height: 330px;
+        width: 100%;
+    }
+}
+
+// Media query for mobile phones
+@media (max-width: $breakpoint-mobile) {
+    .cardProductosContainer {
+        display: block !important;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .cardProducto {
+        height: 420px; 
+        width: 100%;
+        margin-top: 50px; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .imgProducto {
+        height: 280px;
+        width: 100%;
+    }
+}

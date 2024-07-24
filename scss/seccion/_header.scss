@@ -1,0 +1,38 @@
+@import '../general/color';
+@import '../general/extend.scss';
+
+
+header {
+    height: 10vh;
+    background-color: $lila;
+    width: 100%;
+    @extend %flex-between-center;
+
+    img {
+        height: 12vh
+    }
+
+    nav {
+        @extend %flex-center-center;
+
+        ul {
+            margin-top: 1rem;
+
+            li {
+                @extend %inline-block;
+                padding: 5px 30px;
+
+                a {
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $blanco;
+                    &:hover {
+                        color: $blanco;
+                        border-bottom: 2px solid $blanco;
+                    }
+                }
+            }
+        }
+    }
+}

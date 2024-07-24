@@ -1,0 +1,33 @@
+@import '../general/color';
+@import '../general/extend';
+
+
+footer {
+    background-color: $lila;
+    height: 10vh;
+    @extend %flex-between-center;
+    padding-left: 20px;
+    img {
+        height: 10vh;
+    }
+    ul {
+        li {
+            text-decoration: none;
+            list-style: none;
+            color: $blanco;
+            @extend %flex-center-center;
+            a {
+                text-decoration: none;
+                color: $blanco;
+            }
+        }
+        .tittle-footer {
+            font-size: 20px;
+            text-align: center;
+        }
+        .text-footer {
+            padding-top: 5%;
+        }
+        
+    }
+}

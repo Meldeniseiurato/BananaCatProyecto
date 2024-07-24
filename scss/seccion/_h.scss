@@ -1,0 +1,43 @@
+@import '../general/color';
+@import '../general/extend';
+
+
+h1 {
+    color: $blanco;
+    @extend %flex-center-center;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    color: $blanco;
+    @extend %flex-center-center;
+    font-weight: 200;
+}
+
+.h2-verde {
+    color: $verde;
+    @extend %flex-center-center;
+    font-weight: 200;
+}
+
+h3 {
+    color: $blanco;
+    @extend %flex-center-center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+h4 {
+    color: $rojo;
+    @extend %flex-center-center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+h5 {
+    color: $rojo;
+    font-weight: 400;
+}
